@@ -1,0 +1,55 @@
+form{
+    display: grid;
+    align-items: baseline;
+}
+input{
+    block-size: 2em;
+    max-inline-size: fit-content;
+    font-size: 1rem;
+    border: 1px solid var(--primaryDark);
+    accent-color: var(--accentDark);
+    font-family: var(--mainFont);
+}
+main{
+    height: 120vb;
+}
+input, fieldset{
+    border-radius: 7px;
+}
+input[type="radio"], input[type="checkbox"], label>input{
+vertical-align: middle;
+}
+input[type="submit"]{
+    border: 3px solid var(--secondaryDark);
+}
+input[type="reset"]{
+    margin-inline-start: 10px;
+}
+input:not([type="radio"], [type="checkbox"]){
+margin-block-end: 15px;
+}
+fieldset{
+    display: inline-block;
+}
+@media screen and (min-width:768px){
+    form{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 15px;
+        column-gap: 5px;
+        margin-inline-start: 0%;
+        margin-inline-end: 20%;
+    }
+    label{
+        justify-self: end;
+    }
+    fieldset:not(>label)::after{
+        content: ":";
+    }
+    fieldset, #actions{
+        grid-column-start: 2;
+    }
+    input:not([type="radio"], [type="checkbox"], fieldset){
+        margin-block-end: 0px;
+    }
+}

@@ -1,0 +1,17 @@
+img{
+    display: flex;
+    width: 12vi;
+    height: auto;
+    margin-top: 25px;
+    border: 5px solid #000;
+    border-radius: 7px;
+}
+.flexcontainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-inline-start: 5%;
+}
+article p{
+    margin-inline-end: 40%;
+}

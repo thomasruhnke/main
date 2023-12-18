@@ -1,0 +1,19 @@
+section{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+.italics{
+    font-style: italic;
+}
+article{
+margin-inline-start: 20%;
+margin-inline-end: 20%;
+text-align: center;
+}
+main{
+    height: 110vb;
+}

@@ -1,0 +1,35 @@
+h2{
+    text-align: center;
+    padding:5px;
+}
+table{
+    margin: auto;
+    border: solid 3px #000;
+    border-collapse: collapse;
+}
+td, th{
+    padding:3px;
+    border:solid 1px #000;
+}
+td{
+    text-align: center;
+}
+
+th{
+    font-weight:bold;
+    font-size: 1.1em;
+    text-align: center;
+}
+main{
+    height:70vb;
+}
+
+p{
+    text-align: center;
+}
+footer{
+    inline-size: 100%;
+    block-size: auto;
+}
+
+    

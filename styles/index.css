@@ -1,0 +1,26 @@
+.parent{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+.grid2{
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+img{
+    width: 20vi;
+    height: auto;
+    margin-inline-start: 20%;
+    display:flex;
+    flex-direction: column;
+    border: 5px solid #000;
+    border-radius: 7px;
+
+}
+main{
+    margin-inline-end: 20%;
+    height: 120vb;
+}

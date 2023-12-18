@@ -1,0 +1,17 @@
+img{
+    width: 20vi;
+    height: auto;
+}
+section{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+.div1 { grid-area: 1 / 2 / 2 / 3; }
+.div2 { grid-area: 1 / 3 / 2 / 4; }
+.div3 { grid-area: 2 / 3 / 3 / 4; }
+main{
+    height: 90vb;
+}

@@ -1,0 +1,144 @@
+/*
+* {
+    border: 4px solid red;
+}
+*/
+:root{
+    --primaryBackground: linear-gradient( #d3a716, rgb(224, 54, 28), rgb(173, 173, 18));
+    --primaryColour : #000;
+    --secondaryBackground : #f9b071;
+    --fontFamily: Helvetica, sans-serif;
+}
+body{
+    inline-size: 100vi;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-image: var(--primaryBackground);
+    background-size: cover;
+    overflow-x: hidden;
+    min-block-size: 100vb;
+    font-family: var(--fontFamily);
+}
+
+.navimage {
+    width: 100%;
+}
+
+.nav {
+    height: 28vb;
+    overflow: hidden;
+    background-image: url(../images/ComiCoreBanner.png);
+    background-position: top;
+    background-size: cover;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    padding-top: 40px;
+    
+}
+nav ul{
+    display: flex;
+align-items: center;
+flex-direction: row; 
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primaryColour);
+    font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    height:100vb;
+}
+h1{
+    text-align: center;
+}
+article{
+    float: right;
+}
+
+article h2, article p{
+padding-left: 10%;
+inset-inline-end: 10%;
+}
+article p{
+    margin: auto; 
+    
+}
+footer{
+background-color: var(--secondaryBackground);
+inline-size: 100vi;
+border-top: 2px solid #000;
+}
+footer nav{
+    margin:auto;
+}
+footer nav ul{
+display: flex;
+align-items: center;
+flex-direction: column; 
+text-align: center;
+flex-wrap: wrap;
+margin:auto;
+padding: 0%;
+}
+footer nav ul{
+    color: var(--primaryColour);
+}
+.notMobile{
+    display:none;
+}
+footer address{
+    text-align: center;
+}
+footer p{
+    text-align: center;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+}
+@media all and (min-width:768px)
+{
+.notMobile{
+    display:inline;
+}
+footer nav ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row; 
+    justify-content: center;
+}
+footer nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    padding-top: 40px;
+}
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+/*
+For the casual comics use grid-template-columns in the image and set it to 1fr 1fr 1fr 1fr.
+This will allow it to be spaced evenly in 4 sections.
+*/

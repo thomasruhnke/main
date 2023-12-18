@@ -1,0 +1,17 @@
+article{
+    margin-inline-start: 30%;
+    margin-inline-end: 35%;
+    text-align: center;
+}
+.comicstyle{
+    list-style-image: url(/images/favicon.ico);
+    align-items: center;
+}
+section{
+    margin-block-start: 10%;
+    padding: 10px;
+    margin-inline-start: 45%;
+}
+main{
+     height: 70vb;
+}
